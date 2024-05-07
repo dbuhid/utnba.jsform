@@ -1,6 +1,7 @@
 const precio_bas = 1000;
 const precio_ava = 1500;
 const msg_txt = "El valor del plan seleccionado es: $";
+
 plan.addEventListener('change', function(){
     const opcion = document.getElementById('plan').value;
     //document.getElementById('msg2').value = msg_txt + eval(opcion);
