@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+
+    <h1>Contacto</h1>
+
+    <form id="formularioContacto" action="#" method="post">
+        <div>
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="plan">Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="non" selected disabled>Seleccione una opción</option>
+                <option value="precio_bas">Plan Básico</option>
+                <option value="precio_ava">Plan Avanzado</option>
+            </select>
+            <input type="text" size="150" value="" id="msg2" style="border: none" disabled>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
